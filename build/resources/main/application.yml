@@ -9,4 +9,9 @@ spring:
       server:
         git:
           uri: https://github.com/crazyfrogliu/spring-config.git
-
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8000/eureka/
